@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class LogicScript : MonoBehaviour
 {
@@ -17,6 +18,21 @@ public class LogicScript : MonoBehaviour
         playerScore += scoreToAdd;
         scoreText.text = playerScore.ToString();
         scoreTextDepth.text = scoreText.text;
+    }
+
+    // Create a function that reloads the scene
+
+    public void reloadScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    // Create a GameOver function that shows the gameover screen
+
+    public GameObject gameOverScreen;  //Create the "gameOverScreen" slot on the script component in the inspector
+    public void gameOver()
+    {
+        gameOverScreen.SetActive(true);
     }
 
     //Let's add a visible timer

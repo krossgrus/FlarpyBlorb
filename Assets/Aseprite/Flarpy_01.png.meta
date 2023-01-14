@@ -272,6 +272,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Flarpy_01_8
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 67
+        width: 68
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d59113d040e52840b2e268bbe921d96
+      internalID: -556443613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -287,6 +308,7 @@ TextureImporter:
       Flarpy_01_2: 342960864
       Flarpy_01_3: 867072431
       Flarpy_01_4: 1955317421
+      Flarpy_01_8: -556443613
       Flarpy_01_5: 1733776231
       Flarpy_01_0: 577693037
       Flarpy_01_6: 1246485183

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PipeSpawnerScript : MonoBehaviour
 {
-    //Creates the slot in the inspector - needs to be filled in Unity
+    //Creates the assignable field in the inspector - needs to be filled in the Unity Editor
     public GameObject pipe;
 
     public float spawnRate = 2;
@@ -13,6 +13,7 @@ public class PipeSpawnerScript : MonoBehaviour
 
     public float heightOffset = 6;
 
+    // Creates the spawnPipe function
     void spawnPipe()
     {
         float lowestPoint = transform.position.y - heightOffset;

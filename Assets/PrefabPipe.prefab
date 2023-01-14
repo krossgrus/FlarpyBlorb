@@ -166,7 +166,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 6749280203839191676}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 51c0e6e9e22b6424babf467f086db28c, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -230,7 +230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c757cdd265bdb146ab8788f9fb9bdb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 7
   deadZone: -45
 --- !u!1 &6749280204140791191
 GameObject:
@@ -326,7 +326,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 6749280204140791191}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 51c0e6e9e22b6424babf467f086db28c, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

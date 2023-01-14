@@ -10,6 +10,7 @@ public class MiddleTriggerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // this creates a reference to another script so that we can call functions from that other script
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
     }
 
