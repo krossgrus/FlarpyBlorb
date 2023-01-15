@@ -298,6 +298,8 @@ GameObject:
   - component: {fileID: 327543947}
   - component: {fileID: 327543946}
   - component: {fileID: 327543945}
+  - component: {fileID: 327543949}
+  - component: {fileID: 327543950}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -371,6 +373,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &327543949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327543944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2763981371805e4dab3fa715b06ee86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraAnimator: {fileID: 327543950}
+  animationName: CamAnimation
+--- !u!111 &327543950
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327543944}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 04919cd3453b6144fb3c2c080a69cc55, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 04919cd3453b6144fb3c2c080a69cc55, type: 2}
+  m_WrapMode: 1
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &374113218
 GameObject:
   m_ObjectHideFlags: 0
@@ -697,6 +729,8 @@ MonoBehaviour:
   flapStrength: 20
   logicScriptz: {fileID: 0}
   birdIsAlive: 1
+  myCamera: {fileID: 327543944}
+  animationName: CamAnimation
   nameofvariablethatreferencespipespawnerscript: {fileID: 0}
 --- !u!1 &494540222
 GameObject:

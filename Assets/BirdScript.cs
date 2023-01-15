@@ -9,6 +9,8 @@ public class BirdScript : MonoBehaviour
     public float flapStrength;
     public LogicScript logicScriptz;
     public bool birdIsAlive = true;
+    public GameObject myCamera;
+    public string animationName;
 
     // Proof that this is the way to reference other scripts in the game
     public PipeSpawnerScript nameofvariablethatreferencespipespawnerscript;
@@ -32,9 +34,16 @@ public class BirdScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log("Bird Collided");
+        // Play camerashake animation
+        Animation animator = myCamera.GetComponent<Animation>();
+        animator.Play(animationName);
+                
         myRigidbody.velocity += Vector2.left * 100;
         birdIsAlive = false;
         logicScriptz.gameOver();
+          
+
     }
 
 }
