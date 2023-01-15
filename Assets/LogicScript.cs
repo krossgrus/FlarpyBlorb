@@ -9,6 +9,7 @@ public class LogicScript : MonoBehaviour
     public int playerScore;
     public Text scoreText;
     public Text scoreTextDepth;
+    public BirdScript BirdScript;
 
 
 
@@ -35,6 +36,11 @@ public class LogicScript : MonoBehaviour
         gameOverScreen.SetActive(true);
     }
 
+    private void Start()
+    {
+        BirdScript = GameObject.FindGameObjectWithTag("Bird").GetComponent<BirdScript>();
+    }
+
     //Let's add a visible timer
     public Text visibleTimer;
 
@@ -43,11 +49,13 @@ public class LogicScript : MonoBehaviour
 
     private void Update()
     {
-        alexTime += Time.deltaTime;
-        alexTimeRounded = System.Math.Round(alexTime, 3);
+        if (BirdScript.birdIsAlive)
+        {
+            alexTime += Time.deltaTime;
+            alexTimeRounded = System.Math.Round(alexTime, 3);
+            visibleTimer.text = alexTimeRounded.ToString();
 
-
-        visibleTimer.text = alexTimeRounded.ToString();
+        }
 
 
     }
