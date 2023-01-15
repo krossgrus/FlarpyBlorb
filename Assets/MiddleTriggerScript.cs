@@ -22,7 +22,9 @@ public class MiddleTriggerScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 3)
+        Debug.Log(collision.attachedRigidbody.velocity.x);
+
+        if (collision.gameObject.layer == 3 && collision.attachedRigidbody.velocity.x == 0)
         {
             logic.addScore(10);
         }
