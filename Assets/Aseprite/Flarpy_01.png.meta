@@ -129,9 +129,9 @@ TextureImporter:
       name: Flarpy_01_1
       rect:
         serializedVersion: 2
-        x: 225
+        x: 224
         y: 15
-        width: 46
+        width: 48
         height: 165
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -192,10 +192,10 @@ TextureImporter:
       name: Flarpy_01_4
       rect:
         serializedVersion: 2
-        x: 273
+        x: 272
         y: 0
-        width: 46
-        height: 165
+        width: 48
+        height: 166
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,10 +276,10 @@ TextureImporter:
       name: Flarpy_01_8
       rect:
         serializedVersion: 2
-        x: 126
+        x: 125
         y: 67
-        width: 68
-        height: 43
+        width: 70
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

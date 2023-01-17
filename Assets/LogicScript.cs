@@ -13,8 +13,6 @@ public class LogicScript : MonoBehaviour
     public Text highScoreText;
     public BirdScript BirdScript;
 
-
-
     [ContextMenu("Add Score")]
     public void addScore(int scoreToAdd)
     {
@@ -26,6 +24,8 @@ public class LogicScript : MonoBehaviour
         {
             highScore = playerScore;
             highScoreText.text = highScore.ToString();
+            PlayerPrefs.SetInt("HighScorePrefs", highScore);
+            
         }
 
     }
@@ -48,6 +48,9 @@ public class LogicScript : MonoBehaviour
     private void Start()
     {
         BirdScript = GameObject.FindGameObjectWithTag("Bird").GetComponent<BirdScript>();
+
+        highScore = PlayerPrefs.GetInt("HighScorePrefs");
+        highScoreText.text = PlayerPrefs.GetInt("HighScorePrefs").ToString();
     }
 
     //Let's add a visible timer
