@@ -7,8 +7,10 @@ using UnityEngine.SceneManagement;
 public class LogicScript : MonoBehaviour
 {
     public int playerScore;
+    public int highScore;
     public Text scoreText;
     public Text scoreTextDepth;
+    public Text highScoreText;
     public BirdScript BirdScript;
 
 
@@ -19,6 +21,13 @@ public class LogicScript : MonoBehaviour
         playerScore += scoreToAdd;
         scoreText.text = playerScore.ToString();
         scoreTextDepth.text = scoreText.text;
+
+        if (playerScore > highScore)
+        {
+            highScore = playerScore;
+            highScoreText.text = highScore.ToString();
+        }
+
     }
 
     // Create a function that reloads the scene
