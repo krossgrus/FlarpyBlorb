@@ -12,6 +12,8 @@ public class LogicScript : MonoBehaviour
     public Text scoreTextDepth;
     public Text highScoreText;
     public BirdScript BirdScript;
+    
+    // Add Score
 
     [ContextMenu("Add Score")]
     public void addScore(int scoreToAdd)
@@ -29,6 +31,14 @@ public class LogicScript : MonoBehaviour
         }
 
     }
+
+    /* Add start screen
+     * Get player to enter name with keyboard.
+     * Max 5 chars.
+     * Store in list. 
+     * Store highscore if this is the players best score so far. 
+     * Always display top 3 players and their score in game and on start screen. 
+     */
 
     // Create a function that reloads the scene
 
