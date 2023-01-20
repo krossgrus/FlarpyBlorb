@@ -13,6 +13,8 @@ public class PipeSpawnerScript : MonoBehaviour
 
     public float heightOffset = 6;
 
+    public float superduperTime = 1;
+
     // Creates the spawnPipe function
     void spawnPipe()
     {
@@ -26,9 +28,13 @@ public class PipeSpawnerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
+        Time.timeScale = superduperTime;
+
         //This is called to create the first pipe
         spawnPipe();
+
+        
     }
 
     // Update is called once per frame

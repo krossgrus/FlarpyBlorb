@@ -11,7 +11,23 @@ public class LogicScript : MonoBehaviour
     public Text scoreText;
     public Text scoreTextDepth;
     public Text highScoreText;
+
+    public Text inputText;
+    public Text loadedNameText;
+    public string nameOfPlayer;
+
+
     public BirdScript BirdScript;
+    
+    // Save Player Name
+
+    public void SavePlayerName()
+    {
+        nameOfPlayer = inputText.text;
+        PlayerPrefs.SetString("NameOfPlayer", nameOfPlayer);
+        loadedNameText.text = inputText.text;
+    }
+    
     
     // Add Score
 
@@ -61,6 +77,9 @@ public class LogicScript : MonoBehaviour
 
         highScore = PlayerPrefs.GetInt("HighScorePrefs");
         highScoreText.text = PlayerPrefs.GetInt("HighScorePrefs").ToString();
+
+        // load name from PlayerPrefs
+        loadedNameText.text = PlayerPrefs.GetString("NameOfPlayer");
     }
 
     //Let's add a visible timer
