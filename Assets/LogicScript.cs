@@ -16,6 +16,7 @@ public class LogicScript : MonoBehaviour
     public Text loadedNameText;
     public string nameOfPlayer;
 
+    public Text currentHighScoreName;
 
     public BirdScript BirdScript;
     
@@ -70,7 +71,11 @@ public class LogicScript : MonoBehaviour
     {
         gameOverScreen.SetActive(true);
     }
-
+    
+    ///////////////
+    /* S T A R T */
+    ///////////////
+    
     private void Start()
     {
         BirdScript = GameObject.FindGameObjectWithTag("Bird").GetComponent<BirdScript>();
@@ -78,8 +83,11 @@ public class LogicScript : MonoBehaviour
         highScore = PlayerPrefs.GetInt("HighScorePrefs");
         highScoreText.text = PlayerPrefs.GetInt("HighScorePrefs").ToString();
 
-        // load name from PlayerPrefs
+        // load name from PlayerPrefs in Start scene
         loadedNameText.text = PlayerPrefs.GetString("NameOfPlayer");
+
+        // load name from PlayerPrefs in Flarpy scene
+        currentHighScoreName.text = PlayerPrefs.GetString("NameOfPlayer");
     }
 
     //Let's add a visible timer
