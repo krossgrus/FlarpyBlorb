@@ -19,14 +19,17 @@ public class LogicScript : MonoBehaviour
     public Text currentHighScoreName;
 
     public BirdScript BirdScript;
-    
+
+    public Scene startScene;
+
     // Save Player Name
 
     public void SavePlayerName()
     {
         nameOfPlayer = inputText.text;
         PlayerPrefs.SetString("NameOfPlayer", nameOfPlayer);
-        loadedNameText.text = inputText.text;
+        // loadedNameText.text = inputText.text;
+        loadedNameText.text = PlayerPrefs.GetString("NameOfPlayer");
     }
     
     
@@ -64,6 +67,12 @@ public class LogicScript : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    // Load next scene in build index
+    public void loadNextScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
     // Create a GameOver function that shows the gameover screen
 
     public GameObject gameOverScreen;  //Create the "gameOverScreen" slot on the script component in the inspector
@@ -85,6 +94,7 @@ public class LogicScript : MonoBehaviour
 
         // load name from PlayerPrefs in Start scene
         loadedNameText.text = PlayerPrefs.GetString("NameOfPlayer");
+
 
         // load name from PlayerPrefs in Flarpy scene
         currentHighScoreName.text = PlayerPrefs.GetString("NameOfPlayer");

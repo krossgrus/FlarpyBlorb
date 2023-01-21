@@ -240,7 +240,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 820.6, y: 250.5}
+  m_AnchoredPosition: {x: 820.59985, y: 250.5}
   m_SizeDelta: {x: 431.3463, y: 84.53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &232744769
@@ -5977,6 +5977,10 @@ MonoBehaviour:
   scoreText: {fileID: 325068927}
   scoreTextDepth: {fileID: 187137008}
   highScoreText: {fileID: 877652562}
+  inputText: {fileID: 0}
+  loadedNameText: {fileID: 0}
+  nameOfPlayer: 
+  currentHighScoreName: {fileID: 232744769}
   BirdScript: {fileID: 0}
   gameOverScreen: {fileID: 494540222}
   visibleTimer: {fileID: 522420384}
@@ -10839,6 +10843,7 @@ MonoBehaviour:
   pipe: {fileID: 6749280203957727625, guid: 921c750a669c50b4385e549d34ce5627, type: 3}
   spawnRate: 1.8
   heightOffset: 5.5
+  superduperTime: 1
 --- !u!4 &799308966
 Transform:
   m_ObjectHideFlags: 0

@@ -6041,7 +6041,10 @@ MonoBehaviour:
   inputText: {fileID: 298228948}
   loadedNameText: {fileID: 1231371019}
   nameOfPlayer: 
+  currentHighScoreName: {fileID: 0}
   BirdScript: {fileID: 0}
+  startScene:
+    m_Handle: 0
   gameOverScreen: {fileID: 494540222}
   visibleTimer: {fileID: 522420384}
 --- !u!4 &635581568
@@ -16668,7 +16671,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 635581567}
         m_TargetAssemblyTypeName: LogicScript, Assembly-CSharp
-        m_MethodName: reloadScene
+        m_MethodName: loadNextScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
