@@ -29,6 +29,11 @@ public class BirdScript : MonoBehaviour
         {
             myRigidbody.velocity = Vector2.up * flapStrength;
         }
+        else if (Input.GetKeyDown(KeyCode.Space))
+        {
+            logicScriptz.reloadScene();
+        }
+        
 
     }
 
