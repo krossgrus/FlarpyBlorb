@@ -79,7 +79,7 @@ public class LogicScript : MonoBehaviour
         highScoreText.text = PlayerPrefs.GetInt("HighScorePrefs").ToString();
 
         // load name from PlayerPrefs
-        loadedNameText.text = PlayerPrefs.GetString("NameOfPlayer");
+        loadedNameText.text = PlayerPrefs.GetString("NameOfPlayer", nameOfPlayer);
     }
 
     //Let's add a visible timer
