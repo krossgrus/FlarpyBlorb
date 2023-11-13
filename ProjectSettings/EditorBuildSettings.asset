@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/StartFlarpy.unity
+    guid: 774b13a47908720488a0e296b8616337
   - enabled: 1
     path: Assets/Scenes/FlarpyScene.unity
     guid: 19359527becfc1c489474ac519679d7d

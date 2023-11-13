@@ -58,9 +58,15 @@ public class LogicScript : MonoBehaviour
 
     // Create a function that reloads the scene
 
-    public void reloadScene()
+        public void reloadScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    // Load next scene in build index
+    public void loadNextScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     // Create a GameOver function that shows the gameover screen
