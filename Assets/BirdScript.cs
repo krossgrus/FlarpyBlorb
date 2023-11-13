@@ -11,6 +11,8 @@ public class BirdScript : MonoBehaviour
     public bool birdIsAlive = true;
     public GameObject myCamera;
     public string animationName;
+    public string flapAnimation;
+    public string flapAnimationFast;
 
     // Proof that this is the way to reference other scripts in the game
     public PipeSpawnerScript nameofvariablethatreferencespipespawnerscript;
